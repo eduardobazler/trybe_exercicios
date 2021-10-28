@@ -1,0 +1,40 @@
+h1 {
+    font-size: 65px;
+    color: lightsalmon;
+    font-family: sans-serif, "Gill Sans", "Gill Sans MT", Calibri,
+      "Trebuchet MS", sans-serif;
+  }
+
+  ul {
+    background-color: cornflowerblue;
+    font-style: oblique;
+    line-height: 25px;
+  }
+
+  .cor-azul {
+    color: royalblue;
+    font-family: sans-serif;
+  }
+
+  p {
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 3em;
+  }
+
+  body {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  #amarelo{
+    color: yellow;
+  }
+
+  #vermelho {
+    color: red;
+  }
+
+  #marrom {
+    color: rgb(134, 72, 43);
+  }
