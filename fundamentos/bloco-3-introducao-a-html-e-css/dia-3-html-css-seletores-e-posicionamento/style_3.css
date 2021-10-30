@@ -1,0 +1,17 @@
+h1, p, ul, li {
+    text-align: center;
+    
+}
+
+li {
+    list-style: none;
+}
+
+li:hover {
+    color: violet;
+}
+
+li:active {
+    font-family: sans-serif;
+    font-size: 50px;
+}
