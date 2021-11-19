@@ -122,7 +122,7 @@ function exercicio5(evento) {
 
         for (let i = 0; i < sextaFeiras.length; i++) {
 
-            sextaFeiras[i].innerText = 'sextou BB';
+            sextaFeiras[i].innerText = 'sextou';
     
         }
 
@@ -143,3 +143,31 @@ function exercicio5(evento) {
 }
 
 //melhorar esse código!! ^^^^^
+
+
+//6
+
+let listaDias = document.querySelectorAll('.day');
+
+//adicionando um escutador em todos os dias 
+for (let i = 0; i < listaDias.length; i++){
+
+    listaDias[i].addEventListener('mouseover', aumentaZoom);
+    listaDias[i].addEventListener('mouseout', retornaZoom);
+
+}
+
+function aumentaZoom(evento){
+
+    evento.target.style.fontSize = '40px';
+    evento.target.style.fontWeight = '600';
+
+}
+
+function retornaZoom(evento){
+
+    evento.target.style.fontSize = 'unset';
+    evento.target.style.fontWeight = 'unset';
+
+}
+
