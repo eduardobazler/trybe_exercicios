@@ -186,7 +186,7 @@ function exercicio7(string){
     elementPai.appendChild(tarefa);
 
 }
-
+exercicio7('Projeto:');
 
 
 //8
@@ -203,3 +203,59 @@ function exercicio8(cor){
     elementPai.appendChild(corLegenda);
 
 }
+
+exercicio8('green');
+
+//9
+
+function exercicio9(){
+
+    let tarefas = document.querySelectorAll('.task');
+
+    //adiciona "escutador"
+
+    for (let i = 0; i < tarefas.length; i++){
+        tarefas[i].addEventListener('click', selecionaTarefa);
+    }
+
+    let estadoMarcado = 'desligado'
+
+    function selecionaTarefa(evento){
+        if(estadoMarcado === 'desligado'){
+            evento.target.className = 'task selected';
+            
+            estadoMarcado = 'ligado'
+        }
+        else {
+            estadoMarcado = 'desligado'
+            evento.target.className = 'task';
+        }
+    }
+
+}
+
+exercicio9();
+
+//10
+
+function exercicio10(){
+
+    let tarefaSelected = document.querySelector('.task selected');
+
+    let cor = tarefaSelected.style.backgroundColor;
+
+    let dias = document.querySelectorAll('.day');
+
+    for (let i = 0; i < dias.length; i++){
+        dias[i].addEventListener('click', marcarCor);
+    }
+
+    console.log(dias);
+
+    function marcarCor(evento){
+        evento.target.style.color = 'red';
+    }  
+
+}
+
+exercicio10()
