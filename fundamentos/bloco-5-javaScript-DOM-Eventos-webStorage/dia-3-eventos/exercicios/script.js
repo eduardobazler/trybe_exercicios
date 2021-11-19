@@ -70,8 +70,8 @@ function exercicio3(evento) {
 
     let feriados = document.querySelectorAll('.holiday');
 
-    if (botaoFeriado === 'desligado'){
-        for (let i = 0; i < feriados.length; i++){
+    if (botaoFeriado === 'desligado') {
+        for (let i = 0; i < feriados.length; i++) {
 
             feriados[i].style.backgroundColor = 'aqua';
         }
@@ -79,14 +79,14 @@ function exercicio3(evento) {
         botaoFeriado = 'ligado';
 
     } else {
-        for (let i = 0; i < feriados.length; i++){
+        for (let i = 0; i < feriados.length; i++) {
 
             feriados[i].style.backgroundColor = 'unset';
         }
 
         botaoFeriado = 'desligado';
     }
-        
+
 }
 
 //depois pensar em como melhorar esse código
@@ -94,7 +94,7 @@ function exercicio3(evento) {
 
 //4
 
-function exercicio4(string){
+function exercicio4(string) {
     let friday = document.createElement('button');
     friday.innerText = string;
 
@@ -107,3 +107,39 @@ function exercicio4(string){
 
 exercicio4("Sexta-feira");
 
+//5
+
+let estadoBtnSextaFeira = 'desligado'
+
+let btnSextaFeira = document.querySelector('.btn-friday');
+
+btnSextaFeira.addEventListener('click', exercicio5);
+
+function exercicio5(evento) {
+    let sextaFeiras = document.querySelectorAll('#days .friday');
+
+    if (estadoBtnSextaFeira === 'desligado'){
+
+        for (let i = 0; i < sextaFeiras.length; i++) {
+
+            sextaFeiras[i].innerText = 'sextou BB';
+    
+        }
+
+        estadoBtnSextaFeira = 'liagado'
+
+    } else {
+
+        let dias = [4, 11, 18, 25]
+
+        for (let i = 0; i < sextaFeiras.length; i++) {
+
+            sextaFeiras[i].innerText =  dias[i] ;
+    
+        }
+
+        estadoBtnSextaFeira = 'desligado';
+    }
+}
+
+//melhorar esse código!! ^^^^^
