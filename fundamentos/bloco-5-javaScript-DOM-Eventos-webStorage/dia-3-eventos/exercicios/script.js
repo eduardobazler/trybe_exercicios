@@ -181,11 +181,25 @@ function exercicio7(string){
     let elementPai = document.querySelector('.my-tasks');
 
     tarefa.innerText = string
-    pulaLinha = document.createElement('br');
-    tarefa.appendChild(pulaLinha);
+    
 
     elementPai.appendChild(tarefa);
 
 }
 
 
+
+//8
+
+function exercicio8(cor){
+
+    let corLegenda = document.createElement('div');
+    corLegenda.classList.add('task');
+
+    corLegenda.style.backgroundColor = cor;
+
+    elementPai = document.querySelector('.my-tasks');
+
+    elementPai.appendChild(corLegenda);
+
+}
