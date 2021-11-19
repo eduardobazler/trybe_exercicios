@@ -171,3 +171,21 @@ function retornaZoom(evento){
 
 }
 
+
+//7
+
+function exercicio7(string){
+
+    let tarefa = document.createElement('span');
+
+    let elementPai = document.querySelector('.my-tasks');
+
+    tarefa.innerText = string
+    pulaLinha = document.createElement('br');
+    tarefa.appendChild(pulaLinha);
+
+    elementPai.appendChild(tarefa);
+
+}
+
+
