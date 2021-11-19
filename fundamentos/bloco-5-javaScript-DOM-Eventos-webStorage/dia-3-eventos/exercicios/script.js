@@ -43,7 +43,7 @@ for (let i = 0; i < dezDaysList.length; i++) {
 //2
 
 
-function exercicio2 (string){
+function exercicio2(string) {
 
     let paiExc2 = document.querySelector('.buttons-container');
 
@@ -54,6 +54,41 @@ function exercicio2 (string){
     botao.id = 'btn-holiday'
 
     paiExc2.appendChild(botao);
-} 
+}
 
 exercicio2('Feriados');
+
+//3
+
+let btnHoliday = document.querySelector('#btn-holiday');
+
+btnHoliday.addEventListener('click', exercicio3);
+
+let botaoFeriado = 'desligado';
+
+function exercicio3(evento) {
+
+    let feriados = document.querySelectorAll('.holiday');
+
+    if (botaoFeriado === 'desligado'){
+        for (let i = 0; i < feriados.length; i++){
+
+            feriados[i].style.backgroundColor = '#DDEAFF';
+        }
+
+        botaoFeriado = 'ligado';
+
+    } else {
+        for (let i = 0; i < feriados.length; i++){
+
+            feriados[i].style.backgroundColor = 'unset';
+        }
+
+        botaoFeriado = 'desligado';
+    }
+        
+}
+
+//depois pensar em como melhorar esse código
+
+
