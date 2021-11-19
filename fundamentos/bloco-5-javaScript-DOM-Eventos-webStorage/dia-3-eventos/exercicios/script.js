@@ -73,7 +73,7 @@ function exercicio3(evento) {
     if (botaoFeriado === 'desligado'){
         for (let i = 0; i < feriados.length; i++){
 
-            feriados[i].style.backgroundColor = '#DDEAFF';
+            feriados[i].style.backgroundColor = 'aqua';
         }
 
         botaoFeriado = 'ligado';
@@ -91,4 +91,19 @@ function exercicio3(evento) {
 
 //depois pensar em como melhorar esse código
 
+
+//4
+
+function exercicio4(string){
+    let friday = document.createElement('button');
+    friday.innerText = string;
+
+    friday.classList.add("btn-friday");
+
+    let pai = document.querySelector('.buttons-container');
+
+    pai.appendChild(friday);
+}
+
+exercicio4("Sexta-feira");
 
