@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Subemeter Palestra</h1>
+      <p>Preencha o formulário</p>
+    </header>
+    <main>
+      <form action="" method="get">
+        <label for="full-name-id"
+          >Nome:
+          <input type="text" name="full-name" id="full-name-id" />
+        </label>
+        <div>
+          <fieldset>
+            <legend>Tipo de Palestra</legend>
+            <label for="talk-tipe-1"
+              >Palco Principal
+              <input
+                type="radio"
+                name="talk-tipe"
+                id="talk-tipe-1"
+                value="main-stage"
+              />
+            </label>
+            <label for="talk-tipe-2"
+              >Workshop
+              <input
+                type="radio"
+                name="talk-tipe"
+                id="talk-tipe-2"
+                value="workshop"
+              />
+            </label>
+          </fieldset>
+        </div>
+        <div>
+          <label for="size-t-shirt"
+            >Tamanho da camisa:
+            <select name="size-t-shirt" id="size-t-shirt">
+              <option value="p">Pequeno</option>
+              <option value="m">Medio</option>
+              <option value="g">Grande</option>
+            </select>
+          </label>
+        </div>
+        <div>
+          <label for="abstract">
+            <p>Descrição da Palestra:</p>
+            <textarea
+              name="abstract"
+              id="abstract"
+              cols="60"
+              rows="10"
+            ></textarea>
+          </label>
+        </div>
+        <div>
+          <label for="available"
+            >Confirmo que estou disponível na data do evento</label
+          >
+          <input
+            type="checkbox"
+            name="available"
+            id="available"
+            value="true"
+            required
+          />
+        </div>
+
+        <div>
+          <button type="submit">Enviar</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
