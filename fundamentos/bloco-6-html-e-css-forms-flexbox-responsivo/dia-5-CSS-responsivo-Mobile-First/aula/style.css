@@ -269,4 +269,44 @@ li {
     display: none;
   }
 
+  .hero {
+    height: 55vh;
+  }
+
+  .hero h1 {
+    font-size: 2em;
+  }
+  
+  .hero h2 {
+    font-size: 1.2em;
+  }
+  
+  .know-the-hotel .grid .small{
+    flex-basis: 100%;
+  }
+  
+  .know-the-hotel .grid .large{
+    flex-basis: 100%;
+  }
+
+  .features .grid {
+    flex-direction: column;
+  }
+
+  .newsletter form button {
+    margin-top: 20px;
+  }
+
+  .newsletter form {
+    flex-direction: column;
+  }
+
+  .newsletter form input {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .footer ul i {
+    font-size: 40px;
+  } 
 }
