@@ -1,0 +1,16 @@
+{
+  "name": "aula",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.4.1",
+    "jest": "^27.4.3"
+  }
+}
