@@ -18,7 +18,7 @@ const userNationality = ({ firstName, nationality }) => `${firstName} is ${natio
 
 const delay = (maxMilliseconds = 5000) => Math.floor(Math.random() * maxMilliseconds);
 
-const getUser = () => {
+const getUser = (callback) => {
   setTimeout(() => {
     const user = {
       firstName: "Ivan",
@@ -27,7 +27,7 @@ const getUser = () => {
     };
     // Retorne a `callback` passada como parâmetro na função `getUser`
     // Dica: você pode manter o `console.log()`
-    console.log(user);
+    console.log(callback(user));
   }, delay());
 };
 
