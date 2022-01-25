@@ -1,0 +1,28 @@
+.pokemons-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: solid #000000 1px;
+  border-radius: 5px;
+  width: 200px;
+  padding: 10px;
+  box-shadow: rgba(170, 169, 169, 0.993) 10px 5px 10px 5px;
+  margin: 10px;
+}
+
+.pokemons-card:hover {
+  box-shadow: rgba(226, 225, 225, 0.993) 10px 10px 10px 10px;
+}
+
+.pokemons-card li{
+  list-style: none;
+}
+
+.pokemons-card ol {
+  width: 80px;
+}
+
+.pokemons-card img{
+  width: 80px;
+}
