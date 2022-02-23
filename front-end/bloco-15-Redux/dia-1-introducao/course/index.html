@@ -31,6 +31,7 @@
       <p>Color: <span id="value">white</span></p>
       <button id="next">Next color</button>
       <button id="previous">Previous color</button>
+      <button id="randomColor"></button>
     </div>
     <script>
       const ESTADO_INICIAL = {
@@ -53,6 +54,11 @@
               ...state,
               index: state.index === 0 ? state.colors.length -1 : state.index - 1,
             }
+          case 'RANDOM_COLOR' :
+            return {
+              ...state,
+              index: Math.floor(Math.random() * 7),
+            }
           default:
             return state;
         }
@@ -69,6 +75,10 @@
         document.querySelector('#value').textContent = colors[index];
         document.getElementById('container').style.backgroundColor = colors[index];
       }) 
+
+      document.querySelector('#randomColor').addEventListener('click', () => {
+        store.dispatch({ type: 'RANDOM_COLOR'})
+      })
     </script>
   </body>
 </html>
